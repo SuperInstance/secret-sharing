@@ -1,0 +1,20 @@
+[package]
+name = "si-secret-sharing"
+version = "0.1.0"
+edition = "2021"
+description = "Shamir's secret sharing, verifiable secret sharing (Feldman VSS), reconstruction from subsets, and threshold variants over finite fields"
+license = "MIT OR Apache-2.0"
+authors = ["SuperInstance"]
+repository = "https://github.com/SuperInstance/secret-sharing"
+keywords = ["secret-sharing", "shamir", "feldman", "threshold", "cryptography"]
+categories = ["cryptography", "algorithms"]
+readme = "README.md"
+
+[dependencies]
+num-bigint = { version = "0.4", features = ["rand"] }
+num-integer = "0.1"
+num-traits = "0.2"
+rand = "0.8"
+sha2 = "0.10"
+
+[dev-dependencies]
